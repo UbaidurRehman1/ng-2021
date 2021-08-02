@@ -6,6 +6,7 @@
 <hr>
 <app-recipe-item
     *ngFor="let recipe of recipes"
-    [recipe]="recipe">
+    [recipe]="recipe"
+    (recipeSelected)="selectRecipe($event)">
 </app-recipe-item>
 
