@@ -10,7 +10,7 @@ export class SearchService {
     constructor(private http: HttpClient) {
     }
 
-    getAll_(): Observable<Person[]> {
+    private getAll_(): Observable<Person[]> {
         return this.http.get<Person[]>("assets/data/people.json");
     }
 
